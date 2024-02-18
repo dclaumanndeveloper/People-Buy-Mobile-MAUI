@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeopleBuyMobile.Pages.Filters"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Name="Filtros">
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="Tomato" StatusBarStyle="LightContent" />
+    </ContentPage.Behaviors>
+    <StackLayout Margin="10" Padding="10">
+    <SearchBar Placeholder="Pesquisar..." />
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Filtros" FontSize="Title" Margin="10,20,10,20" />
+                <Picker Title="Categoria"
+                   x:Name="CategoriaPicker" Margin="10" Style="{StaticResource PickerPadrao}">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Acessórios</x:String>
+                            <x:String>Antiguidades e Colecionáveis</x:String>
+                            <x:String>Arte, Hobby e Lazer</x:String>
+                            <x:String>Automotivo</x:String>
+                            <x:String>Bebidas</x:String>
+                            <x:String>Beleza e Cosméticos</x:String>
+                            <x:String>Brinquedos</x:String>
+                            <x:String>Celulares e Smartphones</x:String>
+                            <x:String>Computadores e Informática</x:String>
+                            <x:String>Construção e Ferramentas</x:String>
+                            <x:String>Decoração</x:String>
+                            <x:String>Eletrodomésticos</x:String>
+                            <x:String>Eletrônicos</x:String>
+                            <x:String>Esportes e Fitness</x:String>
+                            <x:String>Ferramentas</x:String>
+                            <x:String>Imóveis</x:String>
+                            <x:String>Informática</x:String>
+                            <x:String>Instrumentos Musicais</x:String>
+                            <x:String>Jardinagem</x:String>
+                            <x:String>Joias e Relógios</x:String>
+                            <x:String>Livros</x:String>
+                            <x:String>Moda</x:String>
+                            <x:String>Móveis</x:String>
+                            <x:String>Música</x:String>
+                            <x:String>Óculos</x:String>
+                            <x:String>Pet</x:String>
+                            <x:String>Saúde</x:String>
+                            <x:String>Serviços</x:String>
+                            <x:String>Smartphones</x:String>
+                            <x:String>Telefonia</x:String>
+                            <x:String>TVs e Áudio</x:String>
+                            <x:String>Veículos</x:String>
+                            <x:String>Videogames</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="Distância" FontSize="Body" FontFamily="OpenSans" Margin="25" />
+                <Slider Style="{StaticResource SliderPadrao}" Minimum="0" Maximum="100000" Value="50" />
+                <Button
+                    x:Name="btnAplicarFiltros"
+                    Text="Aplicar Filtros"
+                    Style="{StaticResource BotaoPadrao}" />
+            </StackLayout>
+    </ScrollView>
+</StackLayout>
+</ContentPage>

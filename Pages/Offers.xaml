@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PeopleBuyMobile.Pages.Offers"
+             x:Name="Ofertas">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+         </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <CarouselView ItemsSource="{Binding Cards}"
+                     x:Name="CarouselView">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+    </StackLayout>
+</ContentPage>
