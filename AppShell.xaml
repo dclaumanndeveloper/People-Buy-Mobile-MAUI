@@ -9,7 +9,7 @@
 
     <ShellContent
         Title=""
-        ContentTemplate="{DataTemplate local:Filters}"
+        ContentTemplate="{DataTemplate local:Profile}"
         Route="MainPage" />
 
 </Shell>
